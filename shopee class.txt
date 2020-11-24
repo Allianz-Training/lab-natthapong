@@ -1,0 +1,17 @@
+shopee cart 
+
+property
+	quantity
+	itemOrderList
+	overall price
+	discount
+	
+action
+	remove all
+	remove one
+	add coupon
+	add item
+	get total
+	pay
+	
+	
