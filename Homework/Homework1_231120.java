@@ -363,22 +363,56 @@ public class Homework1_231120 {
 	}
 
 	public static void draw22(int n) {
-		for (int i = 0; i <= n; i++) {
-			for (int j = 0; i < n; j++) {
-
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				if (i + j + 1 < n || j - i >= n) {
+					System.out.print("-");
+				} else {
+					System.out.print("*");
+				}
 			}
+			System.out.println("");
 		}
 	}
 
 	public static void draw23(int n) {
-
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				if (i > j || j + i >= n + 3) {
+					System.out.print("-");
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println("");
+		}
 	}
 
 	public static void draw24(int n) {
-
+		for (int i = 0; i < 2 * n - 1; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				if (i + j + 1 < n || j - i >= n || i - j >= n || i + j >= 3 * n - 2) {
+					System.out.print("-");
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println("");
+		}
 	}
 
 	public static void draw25(int n) {
-
+		int num = 1;
+		for (int i = 0; i < 2 * n - 1; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				if (i + j + 1 < n || j - i >= n || i - j >= n || i + j >= 3 * n - 2) {
+					System.out.print("-");
+				} else {
+					System.out.print(num);
+					num++;
+				}
+			}
+			System.out.println("");
+		}
 	}
 }
