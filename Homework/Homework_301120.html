@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=100, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      button {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="draw1()">DRAW1</button>
+    <button onclick="draw2()">DRAW2</button>
+    <button onclick="draw3()">DRAW3</button>
+    <button onclick="draw4()">DRAW4</button>
+    <button onclick="draw5()">DRAW5</button>
+    <button onclick="draw6()">DRAW6</button>
+    <button onclick="draw7()">DRAW7</button>
+    <button onclick="draw8()">DRAW8</button>
+    <button onclick="draw9()">DRAW9</button>
+    <button onclick="draw10()">DRAW10</button>
+    <button onclick="draw11()">DRAW11</button>
+    <button onclick="draw12()">DRAW12</button>
+    <button onclick="draw13()">DRAW13</button>
+    <button onclick="draw14()">DRAW14</button>
+    <button onclick="draw15()">DRAW15</button>
+    <button onclick="draw16()">DRAW16</button>
+    <button onclick="draw17()">DRAW17</button>
+    <button onclick="draw18()">DRAW18</button>
+    <button onclick="draw19()">DRAW19</button>
+    <button onclick="draw20()">DRAW20</button>
+    <button onclick="draw21()">DRAW21</button>
+    <button onclick="draw22()">DRAW22</button>
+    <button onclick="draw23()">DRAW23</button>
+    <button onclick="draw24()">DRAW24</button>
+    <button onclick="GEN()">GEN</button>
+  </body>
+  <script>
+    function GEN() {
+      let row = prompt("row amount");
+      let col = prompt("col amount");
+      let res = "";
+      for (let i = 0; i < col; i++) {
+        for (let j = 0; j < row; j++) {
+          res += "(" + i + "," + j + ") ";
+        }
+        res += "\n";
+        res += "\n";
+      }
+      console.log(res);
+    }
+    function draw1() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        result += "*";
+      }
+      alert(result);
+    }
+
+    function draw2() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          result += "*";
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw3() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          result += j + 1;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw4() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          result += i + 1;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw5() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = n; i > 0; i--) {
+        for (let j = 0; j < n; j++) {
+          result += i;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw6() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          result += n * i + j + 1;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw7() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = n; i > 0; i--) {
+        for (let j = n; j > 0; j--) {
+          result += n * (i - 1) + j;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw8() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        result += i * 2;
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw9() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 1; i <= n; i++) {
+        result += i * 2;
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw10() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+          result += i * j;
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw11() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i == j) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw12() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i + j == n - 1) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw13() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (j > i) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw14() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i + j >= n) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw15() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n * 2 - 1; i++) {
+        for (let j = 0; j < n; j++) {
+          if (j > i || i + j >= n * 2 - 1) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw16() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      result = "ข้อ 16 หาย";
+      alert(result);
+    }
+    function draw17() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i + j < n - 1) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw18() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i > j) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw19() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n * 2 - 1; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i + j < n - 1 || i - j >= n) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw20() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      let num = 1;
+      for (let i = 0; i < n * 2 - 1; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i + j < n - 1 || i - j >= n) {
+            result += "-";
+          } else {
+            result += num;
+            num++;
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw21() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n * 2 - 1; j++) {
+          if (i + j < n - 1 || j - i >= n) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw22() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n * 2 - 1; j++) {
+          if (i > j || i + j >= n * 2 - 1) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw23() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      for (let i = 0; i < n * 2 - 1; i++) {
+        for (let j = 0; j < n * 2 - 1; j++) {
+          if (i + j < n - 1 || j - i >= n || i - j >= n || i + j >= n * 3 - 2) {
+            result += "-";
+          } else {
+            result += "*";
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+    function draw24() {
+      let n = prompt("Insert number here!");
+      n = n * 1;
+      let result = "";
+      let num = 1;
+      for (let i = 0; i < n * 2 - 1; i++) {
+        for (let j = 0; j < n * 2 - 1; j++) {
+          if (i + j < n - 1 || j - i >= n || i - j >= n || i + j >= n * 3 - 2) {
+            result += "-";
+          } else {
+            result += num;
+            num++;
+          }
+        }
+        result += "\n";
+      }
+      alert(result);
+    }
+  </script>
+</html>
