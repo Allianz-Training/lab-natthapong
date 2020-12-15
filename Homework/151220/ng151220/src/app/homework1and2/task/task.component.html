@@ -1,4 +1,6 @@
 <div class="container border rounded row">
-  <div class="col">{{ taskItem.id }}. {{ taskItem.name }}</div>
+  <div class="col" (click)="toggle()">
+    {{ taskItem.id }}. {{ taskItem.name }}
+  </div>
   <button class="col-2 btn btn-danger btn-sm" (click)="delete()">delete</button>
 </div>

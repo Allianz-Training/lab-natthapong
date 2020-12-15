@@ -6,9 +6,13 @@
       *ngFor="let task of taskList"
       [taskItem]="task"
       (OnDelete)="deleteTask($event)"
+      (OnToggle)="toggleTask($event)"
     ></app-task>
   </div>
-  <div class="center inner-yellow add-task">
+  <div
+    class="center inner-yellow add-task"
+    *ngIf="enabledID == 0 || taskList.length == 0"
+  >
     <strong>Add Task</strong>
     <div class="input">
       <div class="right15 name">
@@ -32,4 +36,9 @@
     </div>
     <button class="btn btn-primary" (click)="add()">Add</button>
   </div>
+  <app-description
+    [name]="name"
+    [description]="description"
+    *ngIf="enabledID != 0 && taskList.length != 0"
+  ></app-description>
 </div>

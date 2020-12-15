@@ -1,0 +1,10 @@
+.center {
+  margin: auto;
+  padding: 10px;
+  /* text-align: center; */
+  margin-top: 10px;
+}
+.add-task {
+  margin: unset;
+  text-align: unset;
+}

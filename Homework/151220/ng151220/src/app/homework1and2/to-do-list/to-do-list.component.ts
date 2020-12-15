@@ -9,9 +9,12 @@ import { Task } from '../task';
 export class ToDoListComponent implements OnInit {
   @Input()
   name: string = '';
+  @Input()
   description: string = '';
   taskList: Task[];
   nextId: number = 3;
+  enabledID: number = 0;
+
   constructor() {
     this.taskList = [
       {
@@ -45,5 +48,19 @@ export class ToDoListComponent implements OnInit {
 
   deleteTask(taskItem: Task) {
     this.taskList.splice(this.taskList.indexOf(taskItem), 1);
+  }
+
+  toggleTask(taskItem: Task) {
+    console.log('e', this.enabledID);
+
+    if (this.enabledID === taskItem.id) {
+      this.enabledID = 0;
+      this.name = '';
+      this.description = '';
+    } else {
+      this.enabledID = taskItem.id;
+      this.name = taskItem.name;
+      this.description = taskItem.description;
+    }
   }
 }
