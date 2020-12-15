@@ -1,0 +1,35 @@
+<div class="center outer-green">
+  TODO list
+  <hr />
+  <div class="inner-yellow center">
+    <app-task
+      *ngFor="let task of taskList"
+      [taskItem]="task"
+      (OnDelete)="deleteTask($event)"
+    ></app-task>
+  </div>
+  <div class="center inner-yellow add-task">
+    <strong>Add Task</strong>
+    <div class="input">
+      <div class="right15 name">
+        Name:
+        <input
+          type="text"
+          placeholder="name here"
+          [(ngModel)]="name"
+          (keyup.enter)="add()"
+        />
+      </div>
+      <div class="right15 description">
+        Description:
+        <input
+          type="text"
+          placeholder="description here"
+          [(ngModel)]="description"
+          (keyup.enter)="add()"
+        />
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="add()">Add</button>
+  </div>
+</div>
