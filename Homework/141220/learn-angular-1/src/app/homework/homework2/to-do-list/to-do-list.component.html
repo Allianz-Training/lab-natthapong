@@ -1,0 +1,13 @@
+<div>
+  My Task Today
+  <ul>
+    <li *ngFor="let i of toDoList">
+      {{ i }}
+    </li>
+  </ul>
+  <span>
+    <strong>Task: </strong>
+    <input type="text" [(ngModel)]="item" (keyup.enter)="add(item)" />
+    <button (click)="add(item)">add</button>
+  </span>
+</div>
