@@ -1,0 +1,11 @@
+<div>
+  <ol>
+    <li *ngFor="let i of numArr">
+      <div
+        [ngClass]="{ 'number-even': i % 2 === 0, 'number-odd': i % 2 !== 0 }"
+      >
+        {{ i }}
+      </div>
+    </li>
+  </ol>
+</div>
