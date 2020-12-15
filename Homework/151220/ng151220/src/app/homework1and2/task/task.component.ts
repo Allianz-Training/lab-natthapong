@@ -9,6 +9,8 @@ import { Task } from '../task';
 export class TaskComponent implements OnInit {
   @Input()
   taskItem: Task;
+  @Input()
+  enabledID: number;
 
   @Output()
   OnDelete: EventEmitter<Task> = new EventEmitter();

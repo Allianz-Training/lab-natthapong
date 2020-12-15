@@ -1,4 +1,7 @@
-<div class="container border rounded row">
+<div
+  class="container border rounded row"
+  [class.item-selected]="taskItem.id == enabledID"
+>
   <div class="col" (click)="toggle()">
     {{ taskItem.id }}. {{ taskItem.name }}
   </div>
