@@ -11,6 +11,7 @@ export class ToDoListComponent implements OnInit {
   name: string = '';
   @Input()
   description: string = '';
+
   taskList: Task[];
   nextId: number = 3;
   enabledID: number = 0;
