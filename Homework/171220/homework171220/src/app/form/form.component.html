@@ -1,0 +1,37 @@
+<!-- //Name, Email, Postal Address, Comments - Your answer - SUBMIT -->
+<div class="container" [formGroup]="form">
+  <div>
+    <div>
+      Name
+      <span class="redStar" *ngIf="form.get('name').errors?.required"> * </span>
+    </div>
+    <input type="text" formControlName="name" placeholder="Your answer" />
+  </div>
+  <div>
+    <div>
+      Email
+      <span class="redStar" *ngIf="form.get('email').errors?.required">
+        *
+      </span>
+    </div>
+    <input type="text" formControlName="email" placeholder="Your answer" />
+  </div>
+  <div>
+    <div>
+      Postal Address
+      <span class="redStar" *ngIf="form.get('postalAddress').errors?.required">
+        *
+      </span>
+    </div>
+    <input
+      type="text"
+      formControlName="postalAddress"
+      placeholder="Your answer"
+    />
+  </div>
+  <div>
+    <div>Comments</div>
+    <input type="text" formControlName="comments" placeholder="Your answer" />
+  </div>
+  <button type="submit" (click)="validate()">SUBMIT</button>
+</div>

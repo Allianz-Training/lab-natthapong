@@ -1,0 +1,12 @@
+.container {
+  margin-top: 4%;
+  background-color: #fff;
+  box-shadow: 1px 1px #888;
+  width: 80%;
+  /* padding: unset; */
+  padding: 35px;
+}
+
+.redStar {
+  color: #f00;
+}
