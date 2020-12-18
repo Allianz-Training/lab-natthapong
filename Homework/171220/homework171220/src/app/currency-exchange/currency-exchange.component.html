@@ -1,1 +1,66 @@
-<p>currency-exchange works!</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">CURRENCY EXCHANGE</h1>
+    <p class="lead">
+      Input your currency INPUT, OUTPUT and input amount to the box below.
+    </p>
+    <hr class="my-5" />
+    <div class="row align-items-center">
+      <div class="input-group mb-3 col-2">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Source currency"
+          [(ngModel)]="sourceCurrency"
+        />
+      </div>
+
+      <em
+        class="fa fa-exchange col-1 align-self-center"
+        style="font-size: 20px"
+      ></em>
+
+      <div class="input-group mb-3 col-2">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Exchange to"
+          [(ngModel)]="destinationCurrency"
+        />
+      </div>
+      <h2 class="col-1 align-self-center" style="text-align: center">:</h2>
+      <div class="input-group mb-3 col-3">
+        <input
+          type="number"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Enter amount"
+          [(ngModel)]="amount"
+        />
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="input-group mb-3 col-3">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Result will go here"
+          disabled
+          [(ngModel)]="result"
+        />
+      </div>
+      <div class="col-2">Rate: {{ rate }}</div>
+    </div>
+    <button class="btn btn-primary btn-md" role="button" (click)="convert()">
+      Convert
+    </button>
+  </div>
+</div>

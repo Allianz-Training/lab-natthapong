@@ -1,0 +1,22 @@
+.container {
+  padding: 25px;
+}
+
+.fa {
+  text-align: center;
+}
+
+input {
+  text-transform: uppercase;
+}
+.row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mb-3 {
+  margin-bottom: unset !important;
+}
+
+::placeholder {
+  text-transform: none;
+}
